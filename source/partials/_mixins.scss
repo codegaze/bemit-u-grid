@@ -1,0 +1,35 @@
+@mixin u-grid-setup($namespace, $width) {
+  
+  @media screen and (min-width: $width) {
+
+    @for $i from 1 through $max-cols {
+
+      // If is in the ingore list do nothing
+      @if( index($ignore, $i)) {}
+      @else {
+        $j: 1;
+        
+        // Take care of the one col 100% width
+        @if $j == 1 and $i == 1 {
+          .u-#{$j}\/#{$i}\@#{$namespace} {
+              width: percentage($j/$i); 
+          }
+        }
+        
+        // Take care of the rest
+        @while $j < $i {
+          .u-#{$j}\/#{$i}\@#{$namespace} {
+              width: percentage($j/$i); 
+          }
+          
+          $j: $j + 1
+        }
+      }
+    }
+
+  }
+}
+
+@for $i from 1 through length($versions) {
+  @include u-grid-setup( nth($versions, $i), nth($sizes, $i) + $unit );
+}

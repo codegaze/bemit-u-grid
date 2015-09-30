@@ -1,0 +1,12 @@
+
+// Set your breakpoints' names and sizes
+$versions: "sm", "md", "lg";
+$sizes: 320, 768, 1024;
+
+// Set breakpoint unit
+$unit: 'px';
+// Set you max columns
+$max-cols: 12;
+
+// Set columns you want to ignore separated by comma e.g 7,8
+$ignore: '';

@@ -1,0 +1,18 @@
+{
+  "name": "bemit-u-grid",
+  "version": "0.0.1",
+  "description": "A BEMIT grid prototype",
+  "main": "gulpfile.js",
+  "author": "Thanos K (@codegaze)",
+  "license": "MIT",
+  "devDependencies" :
+  { 
+    "gulp" : "latest",
+    "gulp-concat" : "latest",
+    "gulp-uglify" : "latest",
+    "gulp-sass" : "latest",
+    "gulp-rename" : "latest",
+    "gulp-plumber" : "latest",
+    "gulp-util" : "latest"
+  }
+}
