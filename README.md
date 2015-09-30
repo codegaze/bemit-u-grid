@@ -1,6 +1,6 @@
 A mixin to create a grid based on a Harry Roberts' [article](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) article about about taking the BEM naming a step further.
 
-This mixin creates classes of this patter ```u-1/3@md```.
+This mixin creates classes of this pattern ```u-1/3@md```.
 
 If you 've read any of Harry Roberts' articles, you know that ```u``` stands for utility, ```1/3``` declares that this element takes one third of the available space  and ```@md``` declares the breakpoint.
 
