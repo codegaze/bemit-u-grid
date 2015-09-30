@@ -19,12 +19,15 @@ Declare your variables in the ```_defaults.scss``` file:
 Set your breakpoints' names and sizes
 
 ```$versions: "sm", "md", "lg";```
+
 ```$sizes: 320, 768, 1024;```
 
 Set you max columns
+
 ```$max-cols: 12;```
 
 Set columns you want to ignore separated by comma e.g '7,8'
+
 ```$ignore: '';```
 
 If you have used the ```npm install``` command you will see a file in your dist folder.
