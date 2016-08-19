@@ -5,8 +5,8 @@
     @for $i from 1 through $max-cols {
 
       // If is in the ingore list do nothing
-      @if( index($ignore, $i)) {}
-      @else {
+      @if (not index($ignore, $i)) {
+
         $j: 1;
         
         // Take care of the one col 100% width
@@ -26,10 +26,9 @@
         }
       }
     }
-
   }
 }
 
-@for $i from 1 through length($versions) {
-  @include u-grid-setup( nth($versions, $i), nth($sizes, $i) + $unit );
+@each $version, $size in $breakpoints {
+  @include u-grid-setup( $version, $size + $unit );
 }
