@@ -18,9 +18,11 @@ Declare your variables in the ```_defaults.scss``` file:
 
 Set your breakpoints' names and sizes
 
-```$versions: "sm", "md", "lg";```
-
-```$sizes: 320, 768, 1024;```
+```$breakpoints: (
+	sm: 320,
+	md: 768,
+	lg: 1024
+);```
 
 Set you max columns
 
