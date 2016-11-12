@@ -1,5 +1,5 @@
 @mixin u-grid-setup($namespace, $width) {
-  
+
   @media screen and (min-width: $width) {
 
     @for $i from 1 through $max-cols {
@@ -8,21 +8,13 @@
       @if (not index($ignore, $i)) {
 
         $j: 1;
-        
-        // Take care of the one col 100% width
-        @if $j == 1 and $i == 1 {
+
+        @while $j <= $i {
           .u-#{$j}\/#{$i}\@#{$namespace} {
-              width: percentage($j/$i); 
+              width: percentage($j/$i);
           }
-        }
-        
-        // Take care of the rest
-        @while $j < $i {
-          .u-#{$j}\/#{$i}\@#{$namespace} {
-              width: percentage($j/$i); 
-          }
-          
-          $j: $j + 1
+
+          $j: $j + 1;
         }
       }
     }
