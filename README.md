@@ -20,6 +20,7 @@ Set your breakpoints' names and sizes
 `$breakpoints: (sm: 320, md: 768, lg: 1024);`
 
 Set the breakpoints unit
+
 `$unit: 'px'`
 
 Set you max columns
